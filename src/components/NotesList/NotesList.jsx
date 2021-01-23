@@ -6,13 +6,12 @@ class NotesList extends Component {
   render() {
     return (
       <ul className="notes-list">
-        {Array.of("Trabalho", "Estudos", "Lazer").map((category, index) => {
+        {this.props.notes.map((note, index) => {
           return (
             <li className="notes-list_item" key={index}>
-              <div>{category}</div>
-              <Card />
+              <Card title={note.title} text={note.text} />
             </li>
-          );
+          )
         })}
       </ul>
     );
