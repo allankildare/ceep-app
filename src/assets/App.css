@@ -1,0 +1,18 @@
+:root {
+    --primary: #58a4b0;
+    --secondary: #373f51;
+    --active-secondary: rgb(167, 167, 167);
+    --bg-color: #f3f3f3;
+    --bg-details: #dadada;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: flex;
+}
